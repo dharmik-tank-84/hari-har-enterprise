@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@700&family=Kaushan+Script&family=Poppins:wght@100;300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #dfe4ea;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*-------------- navbar css ------------------*/
+
+.main_div {
+    height: 10vh;
+    margin-top: 1vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 3vh;
+}
+
+.logo img {
+    height: 10vh;
+    cursor: pointer;
+}
+
+.menu-link {
+    width: 40%;
+}
+
+.menu-link ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li .navbar_link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+/*-------------- home css -------------*/
+
+.home_img {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 2vh;
+    background-image: url(../public/image/home.jpeg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* -------------  about css -------------- */
+
+.about {
+    margin-top: 2rem;
+}
+
+.about_headings {
+    display: flex;
+    justify-content: center;
+}
+
+.about_heading {
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0%, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    background-color: black;
+    margin-bottom: 2rem;
+}
+
+.about_detils{ 
+    padding: 0 20px 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+    grid-gap: 30px;
+    width: 100%;
+}
+
+.about_detils_content h3{
+    border-bottom: 1px solid black;
+    margin-bottom: 3px;
+}
+
+.about_detils_content p{
+    font-size: 12px;
+}
+
+/* -------------  service css -------------- */
+
+.service {
+    margin-top: 2rem;
+}
+
+.service_headings {
+    display: flex;
+    justify-content: center;
+}
+
+.service_heading {
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0%, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    background-color: black;
+    margin-bottom: 2rem;
+}
+
+.service_cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.service_card{
+    width: 60%;
+    background: #fff;
+    border-radius: .5rem;
+    padding: 40px 32px;
+    outline-offset: -1rem;
+    outline: .1rem solid rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    transition: .2s linear;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.service_card:hover {
+    outline-offset: 0rem;
+    outline: .2rem solid rgba(0, 0, 0, 0.539);
+}
+
+
+.service_card h1{
+    text-align: center;
+    font-weight: 600;
+}
+
+.service_card_detils{
+    display: flex;
+    gap: 10px;
+}
+
+.service_card_detils img{
+    width: 50%;
+    height: 250px;
+}
+
+.service_card_detils p{
+    width: 50%;
+    font-weight: 400;
+    font-size: 1rem;    
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* menu */
+
+.hamburgur-menu {
+    display: none;
+    position: relative;
+}
+
+/* -------------  contact page --------- */
+
+.contact {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact_headings {
+    display: flex;
+    justify-content: center;
+}
+
+.contact_heading {
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0%, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+    background-color: black;
+    margin-bottom: 2rem;
+}
+
+.row{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px 20px 20px;
+}
+
+.row1{
+    display: flex;
+    gap: 20px;
+    flex: 2;
+}
+
+.row2{
+    flex: 1;
+}
+
+.contact_card{
+    height: 45vh;
+    flex: 1;
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.contact_card div{
+    margin-bottom: 10px;
+    color: black;
+}
+
+.contact_card h1{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contact_card:hover{
+    background: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+.contact_card:hover div{
+    color: white;
+}
+
+/* --------  footer  --------- */
+
+.footer_icon{
+    height: 15vh;
+    width: 100%;
+    background: black;
+}
+
+.footer_social_icons{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer_social_icon{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer_social_icon:hover{
+    background-color: black;
+    box-shadow: 0px 0px 10px 0px rgba(255,255,255,1);
+    color: white;
+}
+
+/* ------------ media queariy --------*/
+
+
+@media (max-width:1070px){
+    .about_detils{
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    }
+}
+
+@media (max-width:1050px){
+    .service_card_detils p{
+        line-height: 20px;
+    }
+}
+@media (max-width:900px){
+    .home_img {
+        height: 90vh;
+        background-size: cover;
+    }
+    .service_card{
+        min-width: 500px;   
+    }
+
+    .service_card_detils{
+        flex-direction: column;
+    }
+
+    .service_card_reverse{
+        flex-direction: column-reverse
+    }
+    
+    .service_card_detils img{
+        width: 100%;
+    }
+    
+    .service_card_detils p{
+        width: 100%;
+    }
+}
+
+@media (max-width:786px) {
+    .menu-link {
+        display: none;
+    }
+
+    .mobile-menu-link {
+        display: block;
+        position: relative;
+        z-index: 99;
+        top: 10vh;
+    }
+
+    .mobile-menu-link {
+        background-color: #dfe4ea;
+        height: 15rem;
+        width: 100%;
+        display: grid;
+        padding-left: 3rem;
+        transition: all 2s linear;
+        transform-origin: top;
+    }
+
+    .mobile-menu-link ul {
+        height: 15rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mobile-menu-link ul li:first-child {
+        transition-delay: 0.2s;
+    }
+
+    .hamburgur-menu {
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    .hamburgur-menu a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 10vh;   
+        color: black;
+        margin-right: 3vh;
+    }
+    .about_detils{
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+    .about_detils_content p{
+        font-size: 10px;
+    }
+    .about_detils_content h3{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+
+    .row2{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:600px){
+    .home_img {
+        height: 80vh;
+    }
+}
+
+@media (max-width:500px){
+    .service_card{
+        min-width: 400px;   
+    }
+    
+    .service_card_detils img{
+        width: 100%;
+    }
+    
+    .service_card_detils p{
+        width: 100%;
+        line-height: 18px;
+        letter-spacing: 0;
+        font-size: .8rem;
+    }
+
+    .row1{
+        flex-direction: column;
+    }
+
+    .row2{
+        margin: 0;
+    }
+}
+
+@media (max-width:470px){
+    .home_img {
+        height: 70vh;
+    }
+}
