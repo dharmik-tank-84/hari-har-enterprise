@@ -37,7 +37,7 @@ const Contact = () => {
                                 <FeedOutlinedIcon />
                             </div>
                             <span>EMAIL</span>
-                            <span>hariharenterprise@gmail.com</span>
+                            <span><a href="mailto:support@hariharenterprise.com" className='mail_link'>support@hariharenterprise.com</a></span>
                         </div>
                     </div>
                 </div>
