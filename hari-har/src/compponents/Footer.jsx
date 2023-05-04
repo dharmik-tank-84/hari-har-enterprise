@@ -10,18 +10,18 @@ const Footer = () => {
       <section className='footer'>
         <div className='footer_icon'>
             <div className='footer_social_icons'>
-                <div className='footer_social_icon'>
+                <a href='https://www.google.com' target='_blank' className='footer_social_icon'>
                     <FacebookIcon />
-                </div>
-                <div className='footer_social_icon'>
+                </a>
+                <a href='https://www.google.com' target='_blank' className='footer_social_icon'>
                     <YouTubeIcon />
-                </div>
-                <div className='footer_social_icon'>
+                </a>
+                <a href='https://www.google.com' target='_blank' className='footer_social_icon'>
                     <InstagramIcon />
-                </div>
-                <div className='footer_social_icon'>
+                </a>
+                <a href='https://www.google.com' target='_blank' className='footer_social_icon'>
                     <TwitterIcon />
-                </div>
+                </a>
             </div>
         </div>
       </section>
