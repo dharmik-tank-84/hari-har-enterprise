@@ -16,19 +16,19 @@ const Contact = () => {
                             <div>
                                 <LocationOnOutlinedIcon />
                             </div>
-                            <h1>ADDRESS</h1>
-                            <p>G-13, Omkar Apartment, Dhaniiwadi near Jain mandir, malad-east, Mumbai - 400097</p>
+                            <span>ADDRESS</span>
+                            <span>G-13, Omkar Apartment, Dhaniiwadi near Jain mandir, malad-east, Mumbai - 400097</span>
                         </div>
                         <div className='contact_card'>
                             <div>
                                 <PhoneIphoneOutlinedIcon />
                             </div>
-                            <h1>PHONE</h1>
-                            <p>
-                                <p>Vijay : 8928747843</p>
-                                <p>JD : 7506052073</p>
-                                <p>Yash : 7506051496</p>
-                            </p>
+                            <span>PHONE</span>
+                            <span style={{display: 'flex', flexDirection: 'column'}}>
+                                <span>Vijay : 8928747843</span>
+                                <span>JD : 7506052073</span>
+                                <span>Yash : 7506051496</span>
+                            </span>
                         </div>
                     </div>
                     <div className="row2">
@@ -36,8 +36,8 @@ const Contact = () => {
                             <div>
                                 <FeedOutlinedIcon />
                             </div>
-                            <h1>EMAIL</h1>
-                            <p>hariharenterprise@gmail.com</p>
+                            <span>EMAIL</span>
+                            <span>hariharenterprise@gmail.com</span>
                         </div>
                     </div>
                 </div>
