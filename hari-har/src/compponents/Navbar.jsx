@@ -16,8 +16,8 @@ const Navbar = () => {
                 <div className={shoMediaIcon ? 'menu-link mobile-menu-link ' : "menu-link"}>
                     <ul>
                         <li><a href="#home" className='navbar_link' onClick={media}>Home</a></li>
-                        <li><a href="#about" className='navbar_link' onClick={media}>About</a></li>
                         <li><a href="#service" className='navbar_link' onClick={media}>Service</a></li>
+                        <li><a href="#about" className='navbar_link' onClick={media}>About</a></li>
                         <li><a href="#contact" className='navbar_link' onClick={media}>Contact</a></li>
                     </ul>
                 </div>

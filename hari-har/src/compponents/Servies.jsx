@@ -41,7 +41,7 @@ const Servies = () => {
                             <h1>Portable Air Conditioners</h1>
                             <div className='service_card_detils service_card_reverse'>
                                 <p>We provide portable air conditioners that keep you cool and comfortable on set, no matter how hot it is outside. Our Aana Condo Alc is a great option for larger productions that require a more permanent air ditioning solution.</p>
-                                <img src="image/portableAirConditioner.jpg" alt="" />
+                                <img src="image/portableAirConditioner.jpeg" alt="" />
                             </div>
                         </div>
                     </div>
